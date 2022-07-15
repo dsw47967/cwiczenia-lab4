@@ -1,7 +1,16 @@
 #!/bin/bash
 
 case $1 in
-  
+  --help)
+    echo 
+    "
+    --help  twyswietla pomoc
+    --date  wyswietla aktualna date
+    --logs  tworzy 100 plikow log(x).txt
+    --logs <liczba>  tworzy X plikow log(x).txt
+    "
+    ;;
+
   --date)
     echo "$(date +'%m/%d/%Y')"
     ;;
